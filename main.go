@@ -7,6 +7,7 @@ import (
 
 func main() {
 	logger.Log("Running tests...")
+	logger.Log("Reading tests...")
 	tests, err := reader.ReadDTO()
 	if err != nil {
 		logger.Log(err.Error())
